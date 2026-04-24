@@ -20,6 +20,7 @@
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="#collection">Collection</a>
+      <a href="#featured">Featured work</a>
       <a href="#process">Rental process</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -30,30 +31,31 @@
 
 <main>
 
-  <section class="hero">
+  <section class="hero" aria-label="The Surface Room">
+    <img class="hero-img" src="img/hero.jpg" alt="A warm, stucco surface lit from one side with soft leaf shadows — a sample of the surfaces rented by The Surface Room." />
+    <div class="hero-scrim"></div>
     <div class="wrap hero-wrap">
       <div class="hero-copy">
-        <span class="eyebrow">Toronto &middot; Est. Rental Studio</span>
+        <span class="eyebrow">Toronto &middot; Rental Studio</span>
         <h1>Surfaces made for the camera.</h1>
         <p class="lead">A handcrafted collection of photography surfaces, backgrounds and props — curated for food stylists, commercial photographers and art directors who care about the details in frame.</p>
         <div class="hero-cta">
           <a class="btn btn-primary" href="#collection">Explore the collection</a>
-          <a class="btn btn-link" href="#contact">Book an appointment &rarr;</a>
-        </div>
-        <div class="hero-meta">
-          <span>By appointment, seven days a week</span>
-          <span class="sep">/</span>
-          <span>Free drop-off &amp; pick-up across the GTA on orders over $150</span>
+          <a class="btn btn-link btn-link-light" href="#contact">Book an appointment &rarr;</a>
         </div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="plate plate-1"></div>
-        <div class="plate plate-2"></div>
-        <div class="plate plate-3"></div>
-        <div class="plate plate-4"></div>
-        <div class="plate-tag">
-          <span class="tag-code">SR—142</span>
-          <span class="tag-label">Honed Carrara</span>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hmi-label">Studio</span>
+          <span class="hmi-value">1143 Broadview Ave, Toronto</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hmi-label">Hours</span>
+          <span class="hmi-value">By appointment, seven days</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hmi-label">Delivery</span>
+          <span class="hmi-value">Free GTA on orders over $150</span>
         </div>
       </div>
     </div>
@@ -76,17 +78,72 @@
     </div>
   </section>
 
-  <section id="collection" class="section">
+  <section id="featured" class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Featured surfaces</span>
+        <h2>A glimpse of the range.</h2>
+        <p>Every piece is designed, painted, aged and tested in-house. Here's a look at some of what's currently in rotation.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure class="g g-1">
+        <img src="img/backgrounds.jpg" alt="A patinated, rust-streaked background in blues, ochres and warm browns." loading="lazy" />
+        <figcaption>
+          <span class="fc-code">SR—142</span>
+          <span class="fc-name">Oxidized Patina</span>
+        </figcaption>
+      </figure>
+      <figure class="g g-2">
+        <img src="img/surfaces.jpg" alt="A close-up of cream marble with soft pink and gold veining." loading="lazy" />
+        <figcaption>
+          <span class="fc-code">SR—078</span>
+          <span class="fc-name">Honed Breccia</span>
+        </figcaption>
+      </figure>
+      <figure class="g g-3">
+        <img src="img/painted.jpg" alt="A hand-painted backdrop with pink and magenta vertical stripes." loading="lazy" />
+        <figcaption>
+          <span class="fc-code">SR—104</span>
+          <span class="fc-name">Hand-Painted Stripe</span>
+        </figcaption>
+      </figure>
+      <figure class="g g-4">
+        <img src="img/tiles.jpg" alt="A grid of blue and white decorative ceramic tiles." loading="lazy" />
+        <figcaption>
+          <span class="fc-code">SR—033</span>
+          <span class="fc-name">Zellige Blue</span>
+        </figcaption>
+      </figure>
+      <figure class="g g-5">
+        <img src="img/about-2.jpg" alt="A deep magenta plaster surface with hand-troweled texture." loading="lazy" />
+        <figcaption>
+          <span class="fc-code">SR—091</span>
+          <span class="fc-name">Troweled Plaster</span>
+        </figcaption>
+      </figure>
+      <figure class="g g-6">
+        <img src="img/about-3.jpg" alt="A hand-finished grey plaster surface with subtle brush marks." loading="lazy" />
+        <figcaption>
+          <span class="fc-code">SR—065</span>
+          <span class="fc-name">Limewash Grey</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="collection" class="section section-cream">
     <div class="wrap">
       <div class="section-head">
         <span class="kicker">The collection</span>
-        <h2>Eight categories. Dozens of finishes. All built in studio.</h2>
-        <p>Browse by category, or get in touch for a personalized pull based on your brief, palette and props list.</p>
+        <h2>Eight categories. Dozens of finishes.</h2>
+        <p>Browse by category, or send us a brief and we'll build a curated pull for your shoot.</p>
       </div>
 
       <div class="cat-grid">
-        <a class="cat cat-bg" href="#contact">
-          <div class="cat-media" data-texture="stone"></div>
+        <a class="cat cat-wide" href="#contact">
+          <div class="cat-img"><img src="img/backgrounds.jpg" alt="Oxidized patina background" loading="lazy" /></div>
           <div class="cat-info">
             <span class="cat-num">01</span>
             <h3>Backgrounds</h3>
@@ -95,25 +152,25 @@
         </a>
 
         <a class="cat" href="#contact">
-          <div class="cat-media" data-texture="wood"></div>
+          <div class="cat-img"><img src="img/surfaces.jpg" alt="Cream marble surface" loading="lazy" /></div>
           <div class="cat-info">
             <span class="cat-num">02</span>
             <h3>Surfaces</h3>
-            <p>Wood, stone, plaster and composite tops — the foundation of the shot.</p>
+            <p>Marble, plaster, wood and composite tops — the foundation of the shot.</p>
           </div>
         </a>
 
         <a class="cat" href="#contact">
-          <div class="cat-media" data-texture="linen"></div>
+          <div class="cat-img"><img src="img/painted.jpg" alt="Hand-painted striped backdrop" loading="lazy" /></div>
           <div class="cat-info">
             <span class="cat-num">03</span>
-            <h3>Linens</h3>
-            <p>Hand-dyed and aged textiles that move, drape and catch light.</p>
+            <h3>Painted backdrops</h3>
+            <p>Hand-painted panels with bold pattern, colour and pigment that reads on camera.</p>
           </div>
         </a>
 
         <a class="cat" href="#contact">
-          <div class="cat-media" data-texture="tile"></div>
+          <div class="cat-img"><img src="img/tiles.jpg" alt="Decorative ceramic tiles" loading="lazy" /></div>
           <div class="cat-info">
             <span class="cat-num">04</span>
             <h3>Loose tiles</h3>
@@ -122,7 +179,7 @@
         </a>
 
         <a class="cat" href="#contact">
-          <div class="cat-media" data-texture="pedestal"></div>
+          <div class="cat-img"><img src="img/pedestals.jpg" alt="Rich mahogany wood pedestal" loading="lazy" /></div>
           <div class="cat-info">
             <span class="cat-num">05</span>
             <h3>Pedestals</h3>
@@ -131,7 +188,7 @@
         </a>
 
         <a class="cat" href="#contact">
-          <div class="cat-media" data-texture="boards"></div>
+          <div class="cat-img"><img src="img/boards.jpg" alt="Round cherry wood cutting board" loading="lazy" /></div>
           <div class="cat-info">
             <span class="cat-num">06</span>
             <h3>Small boards</h3>
@@ -140,20 +197,20 @@
         </a>
 
         <a class="cat" href="#contact">
-          <div class="cat-media" data-texture="baking"></div>
+          <div class="cat-img"><img src="img/trays.jpg" alt="Dark wood round tray" loading="lazy" /></div>
           <div class="cat-info">
             <span class="cat-num">07</span>
-            <h3>Baking &amp; trays</h3>
-            <p>Weathered trays, wire cooling racks, baskets and baking gear.</p>
+            <h3>Trays &amp; baskets</h3>
+            <p>Weathered trays, baskets, wire cooling racks and baking gear.</p>
           </div>
         </a>
 
         <a class="cat" href="#contact">
-          <div class="cat-media" data-texture="bar"></div>
+          <div class="cat-img"><img src="img/barware.jpg" alt="Moroccan gold-patterned glass" loading="lazy" /></div>
           <div class="cat-info">
             <span class="cat-num">08</span>
             <h3>Barware</h3>
-            <p>Coupes, etched glass, copper, vintage pieces for beverage shoots.</p>
+            <p>Coupes, etched glass, copper and vintage pieces for beverage shoots.</p>
           </div>
         </a>
       </div>
@@ -233,10 +290,10 @@
         <p>Today the studio is a go-to resource for food stylists, commercial photographers and creative directors working on cookbooks, editorial features, product campaigns and restaurant launches across Canada. Every piece is built, aged and tested in-house.</p>
         <a class="btn btn-link" href="#contact">Visit the studio &rarr;</a>
       </div>
-      <div class="about-visual" aria-hidden="true">
-        <div class="stack stack-1" data-texture="stone"></div>
-        <div class="stack stack-2" data-texture="wood"></div>
-        <div class="stack stack-3" data-texture="linen"></div>
+      <div class="about-visual">
+        <img class="stack stack-1" src="img/about-1.jpg" alt="A weathered dark wood panel backdrop." loading="lazy" />
+        <img class="stack stack-2" src="img/about-2.jpg" alt="A hand-finished magenta plaster surface." loading="lazy" />
+        <img class="stack stack-3" src="img/about-3.jpg" alt="A textured grey limewash surface." loading="lazy" />
         <div class="about-label">
           <span>1143 Broadview Ave</span>
           <span>Toronto, ON</span>
@@ -313,6 +370,7 @@
         <h4>Studio</h4>
         <ul>
           <li><a href="#collection">Collection</a></li>
+          <li><a href="#featured">Featured work</a></li>
           <li><a href="#process">Rental process</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
